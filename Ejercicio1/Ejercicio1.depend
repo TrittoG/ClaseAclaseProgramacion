@@ -1,5 +1,10 @@
 # depslib dependency file v1.0
-1521755446 source:d:\ejercicio1\main.c
+1522971847 source:d:\giulianotritto\ejercicio1\main.c
 	<stdio.h>
 	<stdlib.h>
+	"lib.h"
+
+1522971847 source:d:\giulianotritto\ejercicio1\mostrar.c
+
+1522966103 d:\giulianotritto\ejercicio1\lib.h
 

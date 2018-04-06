@@ -1,59 +1,21 @@
+//pedir 10 numeros y guardar en array en main
+//en funcion muestre l oque hay en el array, y cantidad maxima del array
+
 #include <stdio.h>
 #include <stdlib.h>
-#define CANTIDAD 5
+#include "lib.h"
+#define QTY 5
 
 int main()
 {
+    int ARRAYNUMEROS[QTY];
+    float resultado;
+    int max;
 
-    int numero;
-    float promedio;
-    float suma;
-    int i;
-    suma = 0;
-    int mayor;
-    int menor;
-    int flag = 0;
-
-    for(i= 1;i < CANTIDAD+1;i++)
-    {
-    //printf("ingrese un numero mayor que 0 \n");
-    //scanf("%d", &numero);
-    do//valido numero uno
-    {
-        printf("ingrese un numero mayor que 0 \n");
-        scanf("%d", &numero);
-    }while(numero <= 0);
-
-    if(flag == 0)
-    {
-        mayor= numero;
-        menor = numero;
-    }
-    else
-    {
-         if(numero < menor)
-        {
-            menor = numero;
-        }
-        else
-        {
-            if(numero > mayor)
-            {
-                mayor = numero;
-            }
-        }
-    }
-
-    flag++;
-
-    suma = suma + numero;
-    }//fin del for
-
-    promedio = suma/3;
-
-    printf("el promedio es: %.2f \n" , promedio);
-    printf("el numero maximo es %d y el minimo es %d" ,mayor ,menor);
-
-
-    return 0;
+    pedir(QTY, ARRAYNUMEROS);
+    mostrar(QTY, ARRAYNUMEROS);
+    promedio(QTY, ARRAYNUMEROS, &resultado);
+    printf("\n %.2f" ,resultado);
+    maximo(QTY,ARRAYNUMEROS,&max);
+    printf("\n %d", max);
 }
