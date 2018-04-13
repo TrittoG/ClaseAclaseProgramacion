@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1522976841 source:d:\clase5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcs.h"
+	"libClase5.h"
+
+1522967000 source:d:\clase5\funcs.c
+	<stdio.h>
+	<stdlib.h>
+
+1522965996 d:\clase5\funcs.h
+
+1522976841 d:\clase5\libclase5.h
+
+1522976841 source:d:\clase5\libclase5.c
+
+1523579793 source:c:\users\alumno\desktop\claseaclaseprogramacion-master\clase5\libclase5.c
+	<stdio.h>
+	<stdlib.h>
+
+1523582109 source:c:\users\alumno\desktop\claseaclaseprogramacion-master\clase5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcs.h"
+	"libClase5.h"
+
+1522965996 c:\users\alumno\desktop\claseaclaseprogramacion-master\clase5\funcs.h
+
+1523576366 c:\users\alumno\desktop\claseaclaseprogramacion-master\clase5\libclase5.h
+
+1522967000 source:c:\users\alumno\desktop\claseaclaseprogramacion-master\clase5\funcs.c
+	<stdio.h>
+	<stdlib.h>
+
+1523572177 source:c:\users\alumno\desktop\claseaclaseprogramacion-master\lib.h\lib.c
+	<stdio.h>
+	<stdlib.h>
+
