@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1524008180 source:d:\tritto\clase8\libr.c
+	<stdio.h>
+	<stdlib.h>
+
+1524008244 source:d:\tritto\clase8\main.c
+	<stdio.h>
+	<stdlib.h>
+	"libr.h"
+
+1524008245 d:\tritto\clase8\libr.h
+
