@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1524185180 source:d:\tritto\clase8\empleado.c
+	"empleado.h"
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+
+1524184159 source:d:\tritto\clase8\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"empleado.h"
+
+1524174195 d:\tritto\clase8\utn.h
+
+1524182713 d:\tritto\clase8\empleado.h
+
+1524183295 source:d:\tritto\clase8\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
