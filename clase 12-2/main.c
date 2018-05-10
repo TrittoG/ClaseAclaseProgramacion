@@ -23,7 +23,7 @@ int main()
     pantalla_altaForzada(array,QTY,"Wilde","Las Flores 50",50,0);
     pantalla_altaForzada(array,QTY,"Avellaneda","Belgrano 250",2000,0);
     pantalla_altaForzada(array,QTY,"Bernal","Cerrito 300",3000,0);
-    pantalla_altaForzada(array,QTY,"ccccccc","Cerrito 300",3000,0);
+    pantalla_altaForzada(array,QTY,"ccccccc","Cerrito 300",300,0);
     pantalla_altaForzada(array,QTY,"pppppp","Cerrito 300",3000,0);
     pantalla_altaForzada(array,QTY,"aaaaaa","Cerrito 300",3000,0);
     pantalla_altaForzada(array,QTY,"Quilmes","Lavalle 450",1000,1);
@@ -44,6 +44,15 @@ int main()
     //informar_ListadoPantallas(array,QTY);
     //pantalla_mostrarDebug(array, QTY);
     //ListarPantallasInferiorAMil(array, QTY);
+    //mostrarPantallasNoSuperanPromedio(array, QTY);
+    //listarPantallasSuperanDiasContratacion(array,QTY, contrataciones, LEN_CONT);
+    //mostrarPantallasSiSuperanPromedio(array,QTY);
+    //mostrarPantallasMasDeUnaPublicacion(array,QTY, contrataciones,LEN_CONT);
+    //mostrarPantallasMasDeUnaPublicacion(array, QTY, contrataciones, LEN_CONT);
+    listarPantallasIndicandoFacturacion(array, QTY, contrataciones, LEN_CONT);
+
+    informar_pantallaQueMasFactura(array,QTY, contrataciones, LEN_CONT);
+
 
     do
     {

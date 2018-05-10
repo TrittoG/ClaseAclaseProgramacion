@@ -164,8 +164,6 @@ int informar_ListadoPantallas(Pantalla* ArrayP, int cantPantalla)
     int flagSwap;
     Pantalla auxiliarPantalla;
 
-
-
          do
         {
             flagSwap = 0;
@@ -221,12 +219,15 @@ float PromedioPrecios(Pantalla *arrayP, int cantidad_pantalla)
     float auxsuma =0;
     int contador =0;
 
-    for(i=0;i<cantidad_pantalla;i++)
+    if(cantidad_pantalla > 0 && arrayP != NULL)
     {
-        if(arrayP[i].isEmpty ==0)
+        for(i=0;i<cantidad_pantalla;i++)
         {
-            auxsuma = arrayP[i].precio + auxsuma;
-            contador++;
+            if(arrayP[i].isEmpty ==0)
+            {
+                auxsuma = arrayP[i].precio + auxsuma;
+                contador++;
+            }
         }
     }
     return auxsuma/contador;
@@ -236,9 +237,173 @@ float PromedioPrecios(Pantalla *arrayP, int cantidad_pantalla)
 int mostrarPantallasNoSuperanPromedio(Pantalla *arrayP, int cantidad_pantalla)
 {
     int i;
+    float promedio;
+    promedio = PromedioPrecios(arrayP,cantidad_pantalla);
 
-    for(i=0;i<cantidad_pantalla;i++)
+    if(cantidad_pantalla > 0 && arrayP != NULL)
     {
-        if()
+        for(i=0;i<cantidad_pantalla;i++)
+        {
+            if(arrayP[i].precio < promedio && arrayP[i].isEmpty == 0)
+            {
+                printf("PANTALLA: %s PRECIO %f --------- promedio %.2f\n", arrayP[i].nombre,arrayP[i].precio,promedio);
+
+            }
+        }
     }
+    return 0;
+}
+
+
+float promedioDias(Contratacion *arrayC, int cantidad_contratacion)
+{
+    int i;
+    float suma =0;
+    int contador =0;
+    float promedio =0;
+
+    if(cantidad_contratacion > 0 && arrayC != NULL)
+    {
+        for(i=0;i<cantidad_contratacion;i++)
+        {
+            if(arrayC[i].isEmpty == 0)
+            {
+                suma = arrayC[i].dias + suma;
+                contador++;
+            }
+        }
+        promedio = suma/contador;
+    }
+
+    return promedio;
+
+}
+
+int listarPantallasSuperanDiasContratacion(Pantalla *arrayP, int cantidad_pantalla, Contratacion *arrayC, int cantidad_contratacion)
+{
+    int i;
+    float promDias;
+
+
+    if(cantidad_contratacion > 0 && arrayC != NULL)
+    {
+        promDias = promedioDias(arrayC, cantidad_contratacion);
+
+        for(i=0;i<cantidad_contratacion;i++)
+        {
+            if(arrayC[i].isEmpty == 0 && arrayC[i].dias > promDias)
+            {
+                printf("NOMBRE: %s -- DIAS: %d ---- PROMEDIO DIAS: %f\n" , arrayP[i].nombre,arrayC[i].dias,promDias);
+            }
+        }
+    }
+    return 0;
+}
+
+
+int mostrarPantallasSiSuperanPromedio(Pantalla *arrayP, int cantidad_pantalla)
+{
+    int i;
+    float promedio;
+    promedio = PromedioPrecios(arrayP,cantidad_pantalla);
+
+    if(cantidad_pantalla > 0 && arrayP != NULL)
+    {
+        for(i=0;i<cantidad_pantalla;i++)
+        {
+            if(arrayP[i].precio > promedio && arrayP[i].isEmpty == 0)
+            {
+                printf("PANTALLA: %s PRECIO %f --------- promedio %.2f\n", arrayP[i].nombre,arrayP[i].precio,promedio);
+
+            }
+        }
+    }
+    return 0;
+}
+
+int contadorPublicaciones(Contratacion *arrayC, int cantidad_contratacion, int idpantalla)
+{
+    int i;
+    int contador=0;
+    if(cantidad_contratacion > 0 && arrayC != NULL)
+    {
+        for(i=0;i<cantidad_contratacion;i++)
+        {
+            if(arrayC[i].idPantalla == idpantalla && arrayC[i].isEmpty == 0)
+            {
+                contador++;
+            }
+
+        }
+    }
+    return contador;
+}
+
+int mostrarPantallasMasDeUnaPublicacion(Pantalla *arrayP, int cantidad_pantalla, Contratacion *arrayC, int cantidad_contratacion)
+{
+    int i;
+    int contPub;
+    if(cantidad_pantalla > 0 && arrayP != NULL)
+    {
+
+        for(i=0;i<cantidad_pantalla;i++)
+        {
+            contPub = contadorPublicaciones(arrayC,cantidad_contratacion,arrayP[i].idPantalla);
+            if(arrayP[i].isEmpty == 0 && contPub>1)
+            {
+                printf("PANTALLA: %s ---- cantidad de publicaciones: %d\n", arrayP[i].nombre,contPub);
+            }
+        }
+    }
+    return 0;
+}
+
+int listarPantallasIndicandoFacturacion(Pantalla *arrayP, int cant_pantalla, Contratacion *arrayC, int cant_contratacion)
+{
+    int i;
+    int facturacion;
+    if(cant_pantalla >0 && arrayP != NULL && cant_contratacion > 0 && arrayC != NULL)
+    {
+        for(i=0;i<cant_pantalla;i++)
+        {
+            if(arrayP[i].isEmpty ==0 && arrayC[i].isEmpty == 0)
+            {
+                facturacion = arrayP[i].precio * arrayC[i].dias;
+                printf("pantalla: %s --- facturacion: %d\n", arrayP[i].nombre,facturacion);
+
+            }
+        }
+
+    }
+
+    return 0;
+}
+
+
+int informar_pantallaQueMasFactura(Pantalla *ArrayP, int cant_pantalla, Contratacion *ArrayC, int cant_contratacion)
+{
+    int i;
+    int facturacion;
+    int masGrande =-1;
+    char masPantalla[50];
+    if(cant_pantalla >0 && ArrayP != NULL && cant_contratacion > 0 && ArrayC != NULL)
+    {
+        for(i=0;i<cant_pantalla;i++)
+        {
+            if(ArrayP[i].isEmpty ==0 && ArrayC[i].isEmpty == 0)
+            {
+                facturacion = ArrayP[i].precio * ArrayC[i].dias;
+                if(facturacion > masGrande)
+                {
+                    masGrande = facturacion;
+                    strcpy(masPantalla, ArrayP[i].nombre);
+                }
+            }
+        }
+        printf("LA PANTALLA QUE MAS FACTURA ES: %s ---- FACTURO: %d", masPantalla,masGrande);
+    }
+
+    return 0;
+
+
 }

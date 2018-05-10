@@ -199,3 +199,55 @@
 	"utn.h"
 	"Pantalla.h"
 
+1525829934 source:c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Contratacion.h"
+	"utn.h"
+	"Pantalla.h"
+
+1525829934 c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\contratacion.h
+	"pantalla.h"
+
+1525829934 c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\pantalla.h
+
+1525829935 c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\utn.h
+
+1525977679 source:c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\informar.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Contratacion.h"
+	"utn.h"
+	"Pantalla.h"
+
+1525977723 source:c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+	"Contratacion.h"
+	"informar.h"
+
+1525977647 c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\informar.h
+
+1525829934 source:c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+
+1525829935 source:c:\users\giuli\desktop\programacion primer cuatrimestre\laboratorio\clase 12-2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+

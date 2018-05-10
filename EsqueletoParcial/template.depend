@@ -1,0 +1,106 @@
+# depslib dependency file v1.0
+1524699666 source:d:\template\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524691839 source:d:\template\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524691839 d:\template\utn.h
+
+1524700062 source:d:\template\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524700062 d:\template\fantasma.h
+
+1524787808 source:d:\template primer parcial\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524787808 d:\template primer parcial\fantasma.h
+
+1524691840 d:\template primer parcial\utn.h
+
+1524782610 source:d:\template primer parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524691840 source:d:\template primer parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524787810 source:c:\users\laura\desktop\esqueletoparcial\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524787810 c:\users\laura\desktop\esqueletoparcial\fantasma.h
+
+1525459796 c:\users\laura\desktop\esqueletoparcial\utn.h
+
+1524782612 source:c:\users\laura\desktop\esqueletoparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1525460830 source:c:\users\laura\desktop\esqueletoparcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524787810 source:c:\users\giuli\desktop\esqueletoparcial\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524787810 c:\users\giuli\desktop\esqueletoparcial\fantasma.h
+
+1525459796 c:\users\giuli\desktop\esqueletoparcial\utn.h
+
+1525784736 source:c:\users\giuli\desktop\esqueletoparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1525460830 source:c:\users\giuli\desktop\esqueletoparcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
