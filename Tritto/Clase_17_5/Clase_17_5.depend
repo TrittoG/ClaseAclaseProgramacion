@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1527025062 source:d:\tritto\clase_17_5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"cliente.h"
+
+1527026167 d:\tritto\clase_17_5\cliente.h
+
+1526597733 source:d:\tritto\clase_17_5\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	"cliente.h"
+	<string.h>
+
